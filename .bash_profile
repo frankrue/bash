@@ -9,7 +9,13 @@ alias reload="source ~/.bash_profile"
 alias ..="cd .."
 alias ...="cd ../.."
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
+
+# text related
 alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+
+# git related
+alias glab='git add .; git commit -m "update"; git push lab'
+alias gorg='git add .; git commit -m "update"; git push origin'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
