@@ -2,8 +2,8 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 # aliases
 alias cd..="cd .."
-alias l="ls -al --color"
-alias lp="ls -p --color"
+alias l="ls -al"
+alias lp="ls -p"
 alias lsd='ls -Gl | grep "^d"'
 alias reload="source ~/.bash_profile"
 alias ..="cd .."
