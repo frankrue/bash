@@ -48,6 +48,10 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+if [ -f ~/.git-flow-completion.sh ] ; then
+    source ~/.git-flow-completion.sh
+fi
+
 PS1='
 \[\e[2;37m\][ \[\e[0;34m\]\u\[\e[2;34m\]@\[\e[0;34m\]\h \[\e[2;37m\]| \[\e[2;35m\]\@ \[\e[2;37m\]]
 [ \[\e[0;31m\]\w\[\e[2;78m\]$(__git_ps1) \[\e[2;37m\]]
