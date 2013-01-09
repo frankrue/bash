@@ -2,8 +2,8 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 # aliases
 alias cd..="cd .."
-alias l="ls -al"
-alias lp="ls -p"
+alias l="ls -al --color"
+alias lp="ls -p --color"
 alias lsd='ls -Gl | grep "^d"'
 alias reload="source ~/.bash_profile"
 alias ..="cd .."
@@ -15,7 +15,9 @@ alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 
 
 # git related
 alias glab='git add .; git commit -m "update"; git push lab'
+alias glive='git add .; git commit -m "update"; git push live'
 alias gorg='git add .; git commit -m "update"; git push origin'
+alias gbb='git add .; git commit -m "update"; git push bb'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -35,6 +37,10 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 source ~/git-completion.bash
+
+# Environment Vars
+export LSCOLORS=gxfxcxdxbxggedabagacad
+export CLICOLOR=1
 
 GIT_PS1_SHOWDIRTYSTATE=true
 
