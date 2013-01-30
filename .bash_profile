@@ -36,7 +36,7 @@ alias flush="dscacheutil -flushcache"
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
-source ~/git-completion.bash
+source /etc/bash_completion.d/git
 
 # Environment Vars
 export LSCOLORS=gxfxcxdxbxggedabagacad
