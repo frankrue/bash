@@ -19,8 +19,8 @@ alias glive='git add .; git commit -m "update"; git push live'
 alias gorg='git add .; git commit -m "update"; git push origin'
 alias gbb='git add .; git commit -m "update"; git push bb'
 alias git-bd='git config --add user.name frankrue; git config --add user.email frue@bluediesel.com'
-alias gc='git add .; git commit -a -m $1'
-alias gm='git add .; git commit -a -m $1; git push mkj develop'
+alias gc='git add .; git commit -a -m ' + $1
+alias gm='git add .; git commit -a -m ' + $1 + '; git push mkj develop'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
