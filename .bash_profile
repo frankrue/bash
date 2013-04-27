@@ -14,11 +14,10 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
 alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
 
 # git related
-alias glab='git add .; git commit -m "update"; git push lab'
-alias glive='git add .; git commit -m "update"; git push live'
-alias gorg='git add .; git commit -m "update"; git push origin'
-alias gbb='git add .; git commit -m "update"; git push bb'
-alias git-bd='git config --add user.name frankrue; git config --add user.email frue@bluediesel.com'
+alias glab='git add .; git commit -a -m "update"; git push lab'
+alias glive='git add .; git commit -a -m "update"; git push live'
+alias gorg='git add .; git commit -a -m "update"; git push origin'
+alias gbb='git add .; git commit -a -m "update"; git push bb'
 alias gc='git add .; git commit -a -m $1'
 alias gm='git add .; git commit -a -m $1; git push mkj develop'
 
