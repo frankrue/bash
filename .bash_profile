@@ -9,12 +9,10 @@ alias ...="cd ../.."
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
 
 # git related
-alias glab='git add .; git commit -a -m "update"; git push lab'
-alias glive='git add .; git commit -a -m "update"; git push live'
-alias gorg='git add .; git commit -a -m "update"; git push origin'
-alias gbb='git add .; git commit -a -m "update"; git push bb'
-alias gc='git add .; git commit -a -m $1'
-alias gm='git add .; git commit -a -m $1; git push mkj develop'
+function glab { git add .; git commit -a -m $1; git push lab develop; }
+function glive { git add .; git commit -a -m $1; git push live develop; }
+function gorg { git add .; git commit -a -m $1; git push origin develop; }
+function gb { git add .; git commit -a -m $1; git push bocogit develop; }
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
