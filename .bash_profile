@@ -1,3 +1,6 @@
+# paths
+export PATH="/usr/local/mysql/bin:$PATH"
+
 # aliases
 alias cd..="cd .."
 alias l="ls -al"
