@@ -36,6 +36,7 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 source ~/git-completion.bash
 source ~/.rvm/scripts/rvm
+source ~/.profile
 
 # Environment Vars
 export LSCOLORS=gxfxcxdxbxggedabagacad
