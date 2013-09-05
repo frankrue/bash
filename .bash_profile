@@ -53,3 +53,5 @@ PS1='
 [ \[\e[0;31m\]\w\[\e[1;31m\]$(__git_ps1) \[\e[1;30m\]]
 \[\e[1;30m\]> \[\e[0m\]'
 
+PATH=$PATH:./node_modules/.bin
+export PATH
