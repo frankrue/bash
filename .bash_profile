@@ -17,6 +17,8 @@ function glive() { git add .; git commit -a -m "$1"; git push live develop; }
 function gorg() { git add .; git commit -a -m "$1"; git push origin develop; }
 function gb() { git add .; git commit -a -m "$1"; git push bocogit develop; }
 function gc() { git add .; git commit -a -m "$1"; }
+function bbc() { git clone git@bitbucket.org:therues/$1.git; }
+
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -57,4 +59,3 @@ PS1='
 \[\e[1;30m\][ \[\e[1;34m\]\u\[\e[0;34m\]@\[\e[1;34m\]\h \[\e[1;30m\]| \[\e[0;35m\]\@ \[\e[1;30m\]]
 [ \[\e[0;31m\]\w\[\e[1;31m\]$(__git_ps1) \[\e[1;30m\]]
 \[\e[1;30m\]> \[\e[0m\]'
-
