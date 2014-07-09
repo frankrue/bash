@@ -18,6 +18,7 @@ function gorg() { git add .; git commit -a -m "$1"; git push origin develop; }
 function gb() { git add .; git commit -a -m "$1"; git push bocogit develop; }
 function gc() { git add .; git commit -a -m "$1"; }
 function bbc() { git clone git@bitbucket.org:therues/$1.git; }
+function npmg() { ln -s /usr/local/lib/node_modules node_modules; } 
 
 
 # IP addresses
