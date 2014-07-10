@@ -1,3 +1,6 @@
+# paths
+export PATH="/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
+
 # aliases
 alias cd..="cd .."
 alias l="ls -al"
@@ -13,6 +16,10 @@ function glab() { git add .; git commit -a -m "$1"; git push lab develop; }
 function glive() { git add .; git commit -a -m "$1"; git push live develop; }
 function gorg() { git add .; git commit -a -m "$1"; git push origin develop; }
 function gb() { git add .; git commit -a -m "$1"; git push bocogit develop; }
+function gc() { git add .; git commit -a -m "$1"; }
+function bbc() { git clone git@bitbucket.org:therues/$1.git; }
+function npmg() { ln -s /usr/local/lib/node_modules node_modules; } 
+
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -33,6 +40,7 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 source ~/git-completion.bash
 source ~/.rvm/scripts/rvm
+source ~/.profile
 
 # Environment Vars
 export LSCOLORS=gxfxcxdxbxggedabagacad
