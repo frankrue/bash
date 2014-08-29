@@ -10,6 +10,7 @@ alias reload="source ~/.bash_profile"
 alias ..="cd .."
 alias ...="cd ../.."
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
+alias chr='open -a Google\ Chrome --args --disable-web-security'
 
 # git related
 function glab() { git add .; git commit -a -m "$1"; git push lab develop; }
@@ -40,7 +41,7 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 source ~/git-completion.bash
 source ~/.rvm/scripts/rvm
-source ~/.profile
+# source ~/.profile
 
 # Environment Vars
 export LSCOLORS=gxfxcxdxbxggedabagacad
