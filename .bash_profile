@@ -1,5 +1,5 @@
 # paths
-export PATH="/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/mysql/bin:/usr/local/share/npm/bin:~/aws-eb/:$PATH"
 
 # aliases
 alias cd..="cd .."
@@ -11,6 +11,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
 alias chr='open -a Google\ Chrome --args --disable-web-security'
+alias jgit='~/bin/org.eclipse.jgit.pgm-3.5.1.201410131835-r.sh'
+alias awsdevtools='sudo /AWSDevTools/Linux/AWSDevTools-RepositorySetup.sh'
 
 # git related
 function glab() { git add .; git commit -a -m "$1"; git push lab develop; }
@@ -42,6 +44,9 @@ alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 source ~/git-completion.bash
 source ~/.rvm/scripts/rvm
 # source ~/.profile
+
+# z for finding frequently-used dirs
+. `brew --prefix`/etc/profile.d/z.sh
 
 # Environment Vars
 export LSCOLORS=gxfxcxdxbxggedabagacad

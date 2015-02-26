@@ -1,6 +1,9 @@
 bash
 ====
 
-The file I use for my profile while working in Terminal on my Mac OS X Mountain Lion computer.
+Profile customizations.
 
-![Terminal Screenshot](https://raw.github.com/frankrue/bash/master/sample.png "Terminal Screenshot")
+- z `brew install z`
+- tig `brew install tig`
+- mysql `brew install mysql`
+- git `brew install git`
